@@ -1,12 +1,13 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import MyImage from '../assets/myimage.jpeg'
 
 export const Hero = () => {
   return (
     <div className="flex my-11 mb-32 items-center">
 
-      <img src="src\assets\myimage.jpeg" alt="" className='w-[500px] my-6 rounded-lg shadow-2xl' />
+      <img src={MyImage} alt="" className='w-[500px] my-6 rounded-lg shadow-2xl' />
       
       <div className='ml-16 my-6 rounded-lg w-[1000px]'>
         
