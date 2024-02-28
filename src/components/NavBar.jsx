@@ -33,7 +33,8 @@ export const NavBar = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="text-black hover:text-gray-900 hover:underline"
+                className="text-black hover:text-gray-900 hover:underline duration-700
+                cursor-pointer "
               >
                 {item}
               </ScrollLink>

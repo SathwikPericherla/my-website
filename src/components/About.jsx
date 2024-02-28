@@ -1,4 +1,14 @@
 import React from 'react'
+import htmllogo from '../assets/html.png'
+import reactlogo from '../assets/react.png'
+import nextjslogo from '../assets/nextjs.png'
+import uiuxlogo from '../assets/uiux.png'
+import jslogo from '../assets/js.png'
+import tslogo from '../assets/ts.png'
+import tailwindlogo from '../assets/tailwind.png'
+import pythonlogo from '../assets/python.png'
+import gitlogo from '../assets/git.png'
+import latexlogo from '../assets/latex.png'
 
 export const About = () => {
   return (
@@ -17,46 +27,46 @@ export const About = () => {
         
         <div className='flex justify-between mb-11'>
         <div className='w-40'>
-        <img src="src\assets\react.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={reactlogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
 
         <div className='w-40'>
-        <img src="src\assets\nextjs.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={nextjslogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
 
         <div className='w-40'>
-        <img src="src\assets\uiux.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={uiuxlogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
 
         <div className='w-40'>
-        <img src="src\assets\js.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={jslogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
 
         <div className='w-40'>
-        <img src="src\assets\html.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={htmllogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
 
         </div>
 
         <div className='flex justify-between'>
         <div className='w-40'>
-        <img src="src\assets\tailwind.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={tailwindlogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
 
         <div className='w-40'>
-        <img src="src\assets\ts.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={tslogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
 
         <div className='w-40'>
-        <img src="src\assets\python.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={pythonlogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
 
         <div className='w-40'>
-        <img src="src\assets\git.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={gitlogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
 
         <div className='w-40'>
-        <img src="src\assets\latexx.png" alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
+        <img src={latexlogo} alt="" className='rounded-3xl shadow-2xl hover:scale-110 transition-transform duration-700' />
         </div>
         </div>
 
