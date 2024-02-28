@@ -11,8 +11,7 @@ import { Footer } from './components/Footer'
 function App() {
   
   return (
-  <>
-  
+  <div className='overflow-x-hidden'>
   <NavBar />
 <section id="home-section">
   <Hero />
@@ -20,20 +19,20 @@ function App() {
 <section id="about-section">
   <About />
 </section>
-<section id="experience-section">
+{/* <section id="experience-section">
   <Experience />
-</section>
+</section> */}
 <section id="projects-section">
   <Projects />
 </section>
 <section id="certificates-section">
   <Certificates />
 </section>
-<section id="blog-section">
+{/* <section id="blog-section">
   <Blog />
-</section>
+</section> */}
   <Footer/>
-  </>
+  </div>
   )
 }
 

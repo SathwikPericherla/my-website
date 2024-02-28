@@ -11,7 +11,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-10",
+        "grid gap-3 mx-auto w-[80%]  grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-10",
         className
       )}
     >
@@ -58,11 +58,11 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl bg-slate-50 h-full w-full p-4 overflow-hidden shadow-2xl border border-transparent dark:border-slate-100 group-hover:border-slate-100 relative z-20",
+        "rounded-2xl bg-slate-50 w-full p-4 overflow-hidden shadow-2xl border border-transparent dark:border-slate-100 group-hover:border-slate-100",
         className
       )}
     >
-      <div className="relative z-50 ">
+      <div className="relative">
         {imageSrc && <img src={imageSrc} alt="Card Image" className="w-full mb-4 rounded-lg object-cover h-[400px]" />}
         <div className="p-4">{children}</div>
       </div>

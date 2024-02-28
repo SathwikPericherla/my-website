@@ -3,8 +3,8 @@ import { CertiCard } from './CertiCard'
 
 export const Certificates = () => {
   return (
-    <div className="ml-48 mt-36">
-      <h1 className='text-5xl'>Certifications</h1>
+    <div className="mx-auto">
+      <h1 className='flex justify-center lg:w-[40%] text-5xl'>Certifications</h1>
       <CertiCard/>
     </div>
   )

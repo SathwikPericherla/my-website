@@ -6,7 +6,7 @@ import reactnative from "../assets/certificates/reactnative.png"
 
 export function CertiCard() {
   return (
-    <div className="max-w-6xl ">
+    <div className="">
       <HoverEffect items={projects}/>
     </div>
   );
