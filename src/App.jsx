@@ -1,4 +1,3 @@
-import './App.css'
 import { Certificates } from './components/Certificates'
 import { Hero } from './components/Hero'
 import { NavBar } from './components/NavBar'
@@ -8,10 +7,12 @@ import { Blog }  from './components/Blog'
 import { Projects } from  './components/Projects'
 import { Footer } from './components/Footer'
 
+
 function App() {
   
   return (
   <>
+  
   <NavBar />
 <section id="home-section">
   <Hero />
@@ -36,4 +37,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
