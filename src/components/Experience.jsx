@@ -1,9 +1,11 @@
 import React from 'react'
+import { ExperiCard } from './cards/ExperiCard'
 
 export const Experience = () => {
   return (
-    <div className='bg-slate-300 w-full p-4 md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto'>
-      Experience
+    <div className='mx-auto mt-16 flex flex-col justify-center'>
+      <h1 className='flex justify-center lg:justify-start mt-24 text-5xl lg:ml-48'>Experience</h1>
+      <ExperiCard />
     </div>
   )
 }

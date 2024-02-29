@@ -3,7 +3,7 @@ import { Hero } from './components/Hero'
 import { NavBar } from './components/NavBar'
 import { About } from './components/About'
 import { Experience } from "./components/Experience"
-import { Blog }  from './components/Blog'
+import { Connect }  from './components/Connect'
 import { Projects } from  './components/Projects'
 import { Footer } from './components/Footer'
 
@@ -19,9 +19,9 @@ function App() {
 <section id="about-section">
   <About />
 </section>
-{/* <section id="experience-section">
+<section id="experience-section">
   <Experience />
-</section> */}
+</section>
 <section id="projects-section">
   <Projects />
 </section>
@@ -29,7 +29,7 @@ function App() {
   <Certificates />
 </section>
 {/* <section id="blog-section">
-  <Blog />
+  <Connect />
 </section> */}
   <Footer/>
   </div>

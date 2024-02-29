@@ -1,17 +1,19 @@
 import React from 'react'
 import LaunchIcon from '@mui/icons-material/Launch';
 import MyImage from '../assets/myimage.jpeg'
+import { HeroDesc, HeroText } from '../components/cards/HeroText'
 
 export const Hero = () => {
   return (
     <div className="mx-auto flex flex-col my-11 mb-32 mt-20 items-center bg-white text-black dark:bg-black dark:text-white lg:flex-row lg:justify-center lg:w-[90%]">
 
       <img src={MyImage} alt="Sathwik Pericherla" title='Sathwik Pericherla' 
-      className='w-[400px] my-6 rounded-lg shadow-2xl shadow-black lg:ml-36' />
+      className='w-[400px] my-6 rounded-lg shadow-2xl shadow-black lg:ml-36 hover:scale-105 transition-transform duration-700' />
        
-       <div>
+      <div>
       <div className='w-96 mx-auto flex flex-col lg:w-[70%]'>
-      <h2 className="flex my-3 text-4xl lg:text-6xl">Hi, I am Sathwik</h2>
+      <HeroText/>
+      <HeroDesc/>
       <p className='text-justify text-lg line-clamp-6 mb-9 lg:line-clamp-5 lg:text-2xl'>"Welcome to my digital playground, where creativity meets functionality and pixels come to life! As a passionate web developer, I invite you to explore my world of innovative design and cutting-edge technology. "</p>
       </div>
       

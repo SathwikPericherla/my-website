@@ -1,5 +1,5 @@
 import React from 'react'
-import { CertiCard } from './CertiCard'
+import { CertiCard } from './cards/CertiCard'
 
 export const Certificates = () => {
   return (

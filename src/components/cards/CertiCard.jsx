@@ -1,8 +1,8 @@
-import { HoverEffect } from "./card-hover-effect";
-import ibmcerti from "../assets/certificates/ibmcerti.png"
-import bsnl from "../assets/certificates/bsnl.png"
-import matlab from "../assets/certificates/matlab.png"
-import reactnative from "../assets/certificates/reactnative.png"
+import { HoverEffect } from "../ui/card-hover-effect";
+import ibmcerti from "../certificates/ibmcerti.png"
+import bsnl from "../certificates/bsnl.png"
+import matlab from "../certificates/matlab.png"
+import reactnative from "../certificates/reactnative.png"
 
 export function CertiCard() {
   return (

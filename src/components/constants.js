@@ -1,9 +1,9 @@
-import ams from "../assets/projects/ams.png";
-import apbs from "../assets/projects/apbs.png";
-import myaibot from "../assets/projects/myaibot.png";
-import semantify from "../assets/projects/semantify.png";
-import skysync from "../assets/projects/skysync.png";
-import textrecog from "../assets/projects/textrecog.png";
+import ams from "./projects/ams.png";
+import apbs from "./projects/apbs.png";
+import myaibot from "./projects/myaibot.png";
+import semantify from "./projects/semantify.png";
+import skysync from "./projects/skysync.png";
+import textrecog from "./projects/textrecog.png";
 
 const projects = [
     { title: "TextRecog", image: textrecog },
