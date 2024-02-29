@@ -8,7 +8,7 @@ const sectionIds = {
   Experience: 'experience-section',
   Projects: 'projects-section',
   Certificates: 'certificates-section',
-  Blog: 'blog-section',
+  Contact: 'contact-section',
 };
 
 const MobileMenu = ({ NavContents, sectionIds, onItemClick }) => (
@@ -40,7 +40,7 @@ const MobileMenu = ({ NavContents, sectionIds, onItemClick }) => (
 );
 
 export const NavBar = () => {
-  const NavContents = ["Home", "About", "Experience", "Projects", "Certificates", "Blog"];
+  const NavContents = ["Home", "About", "Experience", "Projects", "Certificates", "Contact"];
   const [isOpen, setIsOpen] = useState(false); // State to manage the menu open/close
 
   useEffect(() => {
