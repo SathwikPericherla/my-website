@@ -1,6 +1,6 @@
 import { Link as ScrollLink } from 'react-scroll';
-import {DarkModeToggle} from "./DarkMode"
-import { useState,useEffect, useRef } from 'react'
+import { DarkModeToggle } from "./DarkMode";
+import { useState, useEffect, useRef } from 'react';
 
 const sectionIds = {
   Home: 'home-section',
@@ -11,50 +11,25 @@ const sectionIds = {
   Contact: 'contact-section',
 };
 
-const MobileMenu = ({ NavContents, sectionIds, onItemClick }) => (
-  <div className="md:hidden">
-    <div className="relative">
-      <button onClick={onItemClick} className="text-black focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-      <ul className="absolute top-full left-0 z-10 bg-white shadow-md py-2 mt-2 rounded-md">
-        {NavContents.map((item, index) => (
-          <li key={index}>
-            <ScrollLink
-              to={sectionIds[item]}
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="block px-4 py-2 text-sm text-black hover:bg-gray-200 dark:text-white dark:hover:bg-gray-800"
-              onClick={onItemClick} // Close the menu when a link is clicked
-            >
-              {item}
-            </ScrollLink>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-);
-
+const navbarHeight=100;
 export const NavBar = () => {
   const NavContents = ["Home", "About", "Experience", "Projects", "Certificates", "Contact"];
   const [isOpen, setIsOpen] = useState(false); // State to manage the menu open/close
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (!event.target.closest('.mobile-menu') && isOpen) {
-        setIsOpen(false);
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsOpen(false); // Close the menu when clicked outside
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
     };
-  }, [isOpen]);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -73,6 +48,7 @@ export const NavBar = () => {
                 spy={true}
                 smooth={true}
                 duration={500}
+                offset={-navbarHeight}
                 className="hover:text-slate-900 hover:underline duration-700 cursor-pointer font-semibold dark:hover:text-slate-200"
               >
                 {item}
@@ -82,7 +58,7 @@ export const NavBar = () => {
           <span className='absolute right-11'><DarkModeToggle /> </span>
         </ul>
         {/* Mobile dropdown menu for small screens */}
-        <div className="md:hidden relative mobile-menu">
+        <div className="md:hidden relative" ref={navbarRef}>
           <button onClick={toggleMenu} className="text-black focus:outline-none dark:text-white">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -99,6 +75,7 @@ export const NavBar = () => {
                       spy={true}
                       smooth={true}
                       duration={500}
+                      offset={-navbarHeight}
                       className="block px-4 py-2 text-sm text-gray-900 hover:bg-gray-200 dark:text-white"
                       onClick={toggleMenu} // Close the menu when a link is clicked
                     >
@@ -107,9 +84,8 @@ export const NavBar = () => {
                   </li>
                 ))}
               </ul>
-              
               <div className='ml-3 mb-2 lg:mr-3 lg:mt-2'>
-              <DarkModeToggle/>
+                <DarkModeToggle />
               </div>
             </div>
           )}

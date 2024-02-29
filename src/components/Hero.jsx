@@ -13,8 +13,9 @@ export const Hero = () => {
       <div>
       <div className='w-96 mx-auto flex flex-col lg:w-[70%]'>
       <HeroText/>
-      <HeroDesc/>
-      <p className='text-justify text-lg line-clamp-6 mb-9 lg:line-clamp-5 lg:text-2xl'>"Welcome to my digital playground, where creativity meets functionality and pixels come to life! As a passionate web developer, I invite you to explore my world of innovative design and cutting-edge technology. "</p>
+      <blockquote className="mb-9 text-lg lg:text-2xl border-l-2 pl-5 italic">
+      "Welcome to my digital playground, where creativity meets functionality and pixels come to life! As a passionate web developer, I invite you to explore my world of innovative design and cutting-edge technology. "
+    </blockquote>
       </div>
       
       <div className="flex lg:mx-auto lg:w-[70%]">
