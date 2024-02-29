@@ -1,5 +1,8 @@
 import React from "react";
 import { TracingBeam } from "../ui/tracing-beam";
+import bsnlintern from "../experiences/bsnlintern.jpg"
+import ibmintern from "../experiences/ibmintern.jpg"
+import skilldzireint from "../experiences/skilldzireint.jpg"
 
 export function ExperiCard() {
   return (
@@ -7,22 +10,22 @@ export function ExperiCard() {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10 shadow-2xl rounded-2xl p-6 bg-white text-black dark:bg-gray-800 dark:text-white">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
+            <h2 className="bg-black text-white rounded-lg text-sm w-fit px-4 py-2 mb-4">
               {item.badge}
             </h2>
 
-            <p className="mb-3">
+            <p className="mb-3 font-bold text-lg">
               {item.title}
             </p>
 
-            <div className="text-sm text-justify mr-5 prose prose-sm dark:prose-invert">
+            <div className="text-sm text-justify mr-5 prose prose-sm dark:prose-invert lg:font-semibold">
               {item?.image && (
                 <img
                   src={item.image}
                   alt="blog thumbnail"
                   height={500}
-                  width={500}
-                  className="rounded-lg mb-10 object-cover"
+                  width={600}
+                  className="rounded-lg mb-5 object-cover"
                 />
               )}
               {item.description}
@@ -40,48 +43,43 @@ const dummyContent = [
     description: (
       <div>
         <p>
-          Sit duis est minim proident non nisi velit non consectetur. Esse
-          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-          fugiat Lorem aute sit ullamco.
+        Designed SoloLearn front-end website for interactive coding
+        language learning, featuring engaging lessons, quizzes, and
+        responsive design for enhanced user experience and making learning
+        70% easier than before.
         </p>
       </div>
     ),
     badge: "Intern",
-    image:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: ibmintern ,
   },
   {
     title: "Machine Learning | SkillDzire",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do.
+        Mastered 20% Machine Learning methodologies through SkillDzire
+        internship, actively participating in projects covering data
+        preprocessing, model development, and algorithm implementation.
         </p>
       </>
     ),
     badge: "Intern",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=3540&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: skilldzireint ,
   },
   {
     title: "Telecommunications | BSNL",
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do.
+        Attained comprehensive telecom skills in BSNL internship,
+        performing a streamlining operations and increasing efficiency that
+        leading to reducing costs by 20%. Achieved a 15% enhancement in
+        customer satisfaction.
         </p>
       </>
     ),
     badge: "Intern",
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=3506&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: bsnlintern ,
   },
 ];

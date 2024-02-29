@@ -1,7 +1,7 @@
 import React from 'react'
 import LaunchIcon from '@mui/icons-material/Launch';
 import MyImage from '../assets/myimage.jpeg'
-import { HeroDesc, HeroText } from '../components/cards/HeroText'
+import { HeroDesc, HeroText } from '../components/cards/TextEffect'
 
 export const Hero = () => {
   return (

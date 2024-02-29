@@ -1,5 +1,5 @@
 import React from 'react'
-import {CardDemo} from "./cards/ProjectCard"
+import {ProjectCard} from "./cards/ProjectCard"
 import projects from "./constants"
 
 export const Projects = () => {
@@ -9,7 +9,7 @@ export const Projects = () => {
       <h1 className='flex justify-center lg:justify-start mt-24 text-5xl lg:ml-48'>My Projects</h1>
 
     <div className='grid lg:w-[80%] mt-16 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10'>
-     {projects.map((project, index)=>( <CardDemo title={project.title} image={project.image} key={index} />))}
+     {projects.map((project, index)=>( <ProjectCard title={project.title} image={project.image} bio={project.bio} link={project.link} key={index} />))}
     </div>
 
 
