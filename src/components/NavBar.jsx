@@ -1,6 +1,6 @@
 import { Link as ScrollLink } from 'react-scroll';
 import {DarkModeToggle} from "./DarkMode"
-import { useState,useEffect } from 'react'
+import { useState,useEffect, useRef } from 'react'
 
 const sectionIds = {
   Home: 'home-section',
@@ -43,6 +43,19 @@ export const NavBar = () => {
   const NavContents = ["Home", "About", "Experience", "Projects", "Certificates", "Blog"];
   const [isOpen, setIsOpen] = useState(false); // State to manage the menu open/close
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.mobile-menu') && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isOpen]);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -69,7 +82,7 @@ export const NavBar = () => {
           <span className='absolute right-11'><DarkModeToggle /> </span>
         </ul>
         {/* Mobile dropdown menu for small screens */}
-        <div className="md:hidden relative">
+        <div className="md:hidden relative mobile-menu">
           <button onClick={toggleMenu} className="text-black focus:outline-none dark:text-white">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -94,6 +107,7 @@ export const NavBar = () => {
                   </li>
                 ))}
               </ul>
+              
               <div className='ml-3 mb-2 lg:mr-3 lg:mt-2'>
               <DarkModeToggle/>
               </div>
