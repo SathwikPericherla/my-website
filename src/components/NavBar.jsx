@@ -1,6 +1,7 @@
 import { Link as ScrollLink } from 'react-scroll';
 import { DarkModeToggle } from "./DarkMode";
 import { useState, useEffect, useRef } from 'react';
+import logo from "../assets/favicon.png"
 
 const sectionIds = {
   Home: 'home-section',
@@ -36,9 +37,9 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="bg-white text-black text-lg py-6 fixed top-0 w-full z-50 dark:bg-black dark:text-white">
+    <nav className="bg-white text-black text-lg lg:pb-3 lg:pt-4 py-4 shadow-lg dark:shadow-gray-900 fixed top-0 w-full z-50 dark:bg-black dark:text-white">
       <div className="container flex">
-        <span className="text-2xl font-bold w-96 ml-10 lg:ml-48">Sathwik Pericherla</span>
+        <img src={logo} className="w-12 lg:mr-[17%] ml-10 lg:ml-36"/>
         {/* Regular Navbar for large screens */}
         <ul className="hidden md:flex items-center space-x-16">
           {NavContents.map((item, index) => (
@@ -58,8 +59,8 @@ export const NavBar = () => {
           <span className='absolute right-11'><DarkModeToggle /> </span>
         </ul>
         {/* Mobile dropdown menu for small screens */}
-        <div className="md:hidden relative" ref={navbarRef}>
-          <button onClick={toggleMenu} className="text-black focus:outline-none dark:text-white">
+        <div className="md:hidden absolute mt-3 right-14" ref={navbarRef}>
+          <button onClick={toggleMenu} className="absolute left-0 text-black focus:outline-none dark:text-white">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
