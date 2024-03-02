@@ -50,7 +50,7 @@ export const NavBar = () => {
                 smooth={true}
                 duration={500}
                 offset={-navbarHeight}
-                className="hover:text-slate-900 hover:underline duration-700 cursor-pointer font-semibold dark:hover:text-slate-200"
+                className="hover:text-slate-900 bg hover:underline duration-700 cursor-pointer font-semibold dark:hover:text-slate-200"
               >
                 {item}
               </ScrollLink>
