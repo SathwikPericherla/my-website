@@ -27,7 +27,7 @@ export const Hero = () => {
       </a>
       
       <button className='ml-3 font-bold text-xl px-6 hover:underline duration-700'>
-      <a href="mailto:psathwikvarma93@gmail.com" target="_blank" rel="noreferrer">Contact Me</a>
+      <a href="mailto:mail@sathwikpericherla.in" target="_blank" rel="noreferrer">Contact Me</a>
       </button>
       
       </div>
