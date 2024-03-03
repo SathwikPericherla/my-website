@@ -34,7 +34,7 @@ export const Contact = () => {
           from_name: form.name,
           to_name: "Sathwik",
           from_email: form.email,
-          to_email: "20981a04a6@raghuenggcollege.in",
+          to_email: "psathwikvarma93@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -106,10 +106,17 @@ export const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-        <div className="absolute top-0 flex items-center justify-center">
+        <div>
+        <div className="absolute top-10 left-20 flex items-center justify-center">
           <div className="relative">
             <Meteors number={20} />
           </div>
+          <div className="absolute flex items-center justify-center">
+          <div className="relative">
+            <Meteors number={20} />
+          </div>         
+        </div>
+        </div>
         </div>
       </div>      
     </div>
