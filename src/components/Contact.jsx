@@ -60,9 +60,9 @@ export const Contact = () => {
   };
 
   return (
-    <div className={`mb-14 lg:mt-12 mt-14 flex flex-row justify-center gap-10 overflow-hidden`}>
+    <div className={`mb-16 lg:mt-28 mt-14 flex flex-row justify-center gap-10 overflow-hidden`}>
 
-      <div className=" lg:w-[50%] w-[80%] bg-black-100 p-8 rounded-2xl relative overflow-hidden">
+      <div className=" lg:w-[50%] w-[80%] bg-black-100  p-8 rounded-2xl relative overflow-hidden">
         <h3 className={styles.sectionHeadText}>Contact Me</h3>
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
