@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.2.0",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.11",
     "@mui/material": "^5.15.11",
+    "antd": "^5.15.0",
     "aos": "^3.0.0-beta.6",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.6",

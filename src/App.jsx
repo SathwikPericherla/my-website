@@ -28,9 +28,9 @@ function App() {
 <section id="certificates-section">
   <Certificates />
 </section>
-{/* <section id="contact-section">
+<section id="contact-section">
   <Contact />
-</section> */}
+</section>
   <Footer/>
   </div>
   )
