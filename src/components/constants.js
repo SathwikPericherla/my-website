@@ -2,7 +2,7 @@ import ams from "./projects/ams.png";
 import apbs from "./projects/apbs.png";
 import myaibot from "./projects/myaibot.png";
 import semantify from "./projects/semantify.png";
-import skysync from "./projects/skysync.png";
+import crm from "./projects/crm.png";
 import textrecog from "./projects/textrecog.png";
 
 const projects = [
@@ -31,10 +31,10 @@ const projects = [
         link:"https://github.com/SathwikPericherla/MyAI-Bot.git" 
     },
 
-    {   title: "SkySync", 
-        image: skysync, 
-        bio:"Developing a user-friendly weather app that provides accurate forecasts, real-time updates, and customizable features for users to stay informed about weather conditions and climatic changes anytime, anywhere.", 
-        link:"https://github.com/SathwikPericherla/SkySync.git" 
+    {   title: "CRM", 
+        image: crm, 
+        bio:"Accomplished enhancement of customer relationship management (CRM) efficiency as measured by a 70% increase in client satisfaction by developing a user friendly application with intuitive interface and advanced features.", 
+        link:"https://github.com/SathwikPericherla/dashboard-react.git" 
     },
 
     {   title: "Appointment Booking Application", 
