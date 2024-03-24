@@ -3,6 +3,7 @@ import ibmcerti from "../certificates/ibmcerti.png"
 import bsnl from "../certificates/bsnl.png"
 import matlab from "../certificates/matlab.png"
 import reactnative from "../certificates/reactnative.png"
+import plasmid from "../certificates/plasmid.png"
 
 export function CertiCard() {
   return (
@@ -19,6 +20,15 @@ export const projects = [
     link: "https://drive.google.com/file/d/1yLhySKTPJ7eDKLj8VqYShRTXXy11NQoZ/view?usp=sharing",
     image: ibmcerti
   },
+
+  {
+    title: "Web Development",
+    description:
+      "PLASMID",
+    link: "https://drive.google.com/file/d/1YVCL73oS4JSrstY6KQn3YkUO1T3-KBrF/view?usp=sharing",
+    image: plasmid
+  },
+
   {
     title: "React Native Bootcamp",
     description:
@@ -33,11 +43,5 @@ export const projects = [
     link: "https://drive.google.com/file/d/1TpTrXPJlMAehdVVGBfo0PuuXQOuuOXsN/view?usp=sharing",
     image: bsnl
   },
-  {
-    title: "Matlab OnRamp",
-    description:
-      "MATLAB",
-    link: "https://drive.google.com/file/d/1KWZ1b4sE42a9uU7oeTk0QGGYhdVYSfQ0/view?usp=sharing",
-    image: matlab
-  },
+  
 ];

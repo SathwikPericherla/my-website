@@ -1,7 +1,7 @@
 import ams from "./projects/ams.png";
-import apbs from "./projects/apbs.png";
+import procase from "./projects/procase.png";
 import myaibot from "./projects/myaibot.png";
-import semantify from "./projects/semantify.png";
+import medisearch from "./projects/medisearch.jpg"
 import crm from "./projects/crm.png";
 import textrecog from "./projects/textrecog.png";
 
@@ -19,10 +19,10 @@ const projects = [
     },
 
 
-    {   title: "Semantify", 
-        image: semantify, 
-        bio:"Made a technology that achieves over 95% accuracy in identifying objects, scenes, and concepts within images and provides informative insights about their visual content and enhances the understanding and analysis of visual data.", 
-        link:"" 
+    {   title: "MediSearch", 
+        image: medisearch, 
+        bio:"MediSearch is an innovative platform that leverages the power of AI to provide direct, science-based answers to medical questions. In an era where access to reliable healthcare information is crucial, MediSearch stands out as a reliable, efficient, and accessible solution.", 
+        link:"https://github.com/SathwikPericherla/medisearch.git" 
     },
 
     {   title: "MyAI Bot", 
@@ -37,10 +37,10 @@ const projects = [
         link:"https://github.com/SathwikPericherla/dashboard-react.git" 
     },
 
-    {   title: "Appointment Booking Application", 
-        image: apbs, 
-        bio:"Built a revolutionary Appointment Booking App that optimizes scheduling for service providers and clients across industries with a user-friendly interface and powerful functionalities and most importantly reducing efforts and time by 90%.", 
-        link:"" 
+    {   title: "ProCase", 
+        image: procase, 
+        bio:"ProCase revolutionizes the way individuals monitor and manage their health through an innovative mobile application integrated with a smart mobile case. ProCase empowers users to take proactive steps towards achieving and maintaining their well-being.", 
+        link:"https://github.com/SathwikPericherla/smartcase.git"
     }
 ];
 

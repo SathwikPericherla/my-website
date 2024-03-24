@@ -20,7 +20,7 @@ export const About = () => {
       </div>
 
       <div className="w-[65%] mx-auto">
-        <h2 className='scroll-m-20 lg:w-[30%] w-[90%] pb-2 text-3xl font-semibold tracking-tight mb-11 mt-9'>Here's the Skills I got!</h2>
+        <h2 className='scroll-m-20 lg:w-[35%] w-[90%] pb-2 text-3xl font-semibold tracking-tight mb-11 mt-9'>Here's the Skills I got!</h2>
 
         <div className='flex space-x-16 lg:space-x-10 lg:flex-col'>
         
@@ -30,7 +30,7 @@ export const About = () => {
         </div>
 
         <div className='w-24 mb-5 lg:mb-0'>
-        <img src={nextjslogo} alt="" title='Next.js' className='rounded-3xl shadow-2xl bg-white  hover:scale-110 transition-transform duration-700' />
+        <img src={nextjslogo} alt="" title='Next.js' className='dark:rounded-full rounded-3xl shadow-2xl bg-white  hover:scale-110 transition-transform duration-700' />
         </div>
 
         <div className='w-24 mb-5 lg:mb-0'>
