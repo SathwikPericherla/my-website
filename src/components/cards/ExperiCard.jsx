@@ -7,9 +7,9 @@ import plasmidintern from "../experiences/plasmidintern.png"
 
 export function ExperiCard() {
   return (
-    <TracingBeam className="lg:w-[85%] w-[75%] mx-auto mt-16 px-6">
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-        {dummyContent.map((item, index) => (
+    <TracingBeam className="lg:w-[85%] sm:w-[75%] w-full mx-auto mt-16 px-6">
+      <div className="max-w-2xl w-[75%] mx-auto antialiased pt-4 relative">
+        {experiContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10 shadow-2xl rounded-2xl p-6 bg-white text-black dark:bg-gray-800 dark:text-white">
             <h2 className="bg-black text-white rounded-lg text-sm w-fit px-4 py-2 mb-4">
               {item.badge}
@@ -38,7 +38,7 @@ export function ExperiCard() {
   );
 }
 
-const dummyContent = [
+const experiContent = [
   {
     title: "Front End Development | IBM",
     description: (
