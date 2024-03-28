@@ -39,6 +39,20 @@ export function ExperiCard() {
 }
 
 const experiContent = [
+  
+  {
+    title: "Web Development | Plasmid",
+    description: (
+      <div>
+        <p>
+        Completed my two-month Industrial training as a part of internship program in Web Development at Plasmid. During this period, I have acquired valuable knowledge, practical skills, and hands-on experience in various aspects of web development.
+        </p>
+      </div>
+    ),
+    badge: "Intern",
+    image: plasmidintern ,
+  },
+
   {
     title: "Front End Development | IBM",
     description: (
@@ -53,19 +67,6 @@ const experiContent = [
     ),
     badge: "Intern",
     image: ibmintern ,
-  },
-
-  {
-    title: "Web Development | Plasmid",
-    description: (
-      <div>
-        <p>
-        Completed my two-month Industrial training as a part of internship program in Web Development at Plasmid. During this period, I have acquired valuable knowledge, practical skills, and hands-on experience in various aspects of web development.
-        </p>
-      </div>
-    ),
-    badge: "Intern",
-    image: plasmidintern ,
   },
 
   {
