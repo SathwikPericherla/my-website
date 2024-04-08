@@ -26,7 +26,7 @@ export const Footer = () => {
     const year = currentDate.getFullYear();
                         
     return (
-        <div className="relative ">
+        <div className="relative mt-11">
      
       <div className="bottom-0 flex justify-between w-full bg-white dark:bg-black text-black border border-black dark:border-white py-4 px-6">
         <p className="text-sm font-semibold lg:ml-10 dark:text-white">Sathwik Pericherla, {day} {month} {year}<br className='lg:hidden'/> &copy;  All rights reserved.</p>

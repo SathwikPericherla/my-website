@@ -1,6 +1,7 @@
 import React from 'react'
-import LaunchIcon from '@mui/icons-material/Launch';
+
 import MyImage from '../assets/myimage.jpeg'
+import { ResumeButton } from './ui/ResumeButton';
 import { HeroDesc, HeroText } from '../components/cards/TextEffect'
 
 export const Hero = () => {
@@ -19,13 +20,7 @@ export const Hero = () => {
       </div>
       
       <div className="flex lg:mx-auto lg:w-[70%]">
-      <a href="https://drive.google.com/file/d/1K2mKVScUWHC0uAc1Am0cLcrs4LcE0XL2/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-      <div className="ml-9 flex justify-center border-2 text-xl font-bold bg-black text-white px-7 py-2 pb-3 rounded-lg hover:bg-white hover:text-black hover:border-black transition duration-300 ease-in-out">
-      Resume
-      <LaunchIcon className='ml-1 mt-[2px] lg:ml-1 lg:mt-1'/>
-      </div>
-      </a>
-      
+        <ResumeButton/>
       <button className='ml-3 font-bold text-xl px-6 hover:underline duration-700'>
       <a href="mailto:mail@sathwikpericherla.in" target="_blank" rel="noreferrer">Contact Me</a>
       </button>

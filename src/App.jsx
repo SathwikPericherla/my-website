@@ -6,6 +6,7 @@ import { Experience } from "./components/Experience"
 import { Contact }  from './components/Contact'
 import { Projects } from  './components/Projects'
 import { Footer } from './components/Footer'
+import { SocialCard } from './components/cards/SocialCards'
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
 <section id="contact-section">
   <Contact />
 </section>
+  <SocialCard/>
   <Footer/>
   </div>
   )
