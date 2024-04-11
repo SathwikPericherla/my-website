@@ -14,7 +14,7 @@ export function SocialCard() {
     <div className="flex flex-col md:flex-row md:w-[50%] mx-auto">
       {Social.map((item, index) => (
         <div key={index} className="h-[25rem] w-full flex items-center justify-center z-10">
-          <PinContainer title={item.link} href={item.url}>
+          <a href={item.url} target="_blank"><PinContainer title={item.link} href={item.url}>
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
               <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-black dark:text-slate-100">
                 {item.title}
@@ -28,7 +28,7 @@ export function SocialCard() {
                 <img src={item.picture} alt={item.title} className="rounded-lg" />
               </div>
             </div>
-          </PinContainer>
+          </PinContainer></a>
         </div>
       ))}
     </div>
